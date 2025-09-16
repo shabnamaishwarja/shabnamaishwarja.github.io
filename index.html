@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shabnam Aishwarja — Product Designer</title>
+  <meta name="description" content="Portfolio of Shabnam Aishwarja, Product & UI/UX Designer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --muted:#9aa0a6;
+      --accent:#ffffff;
+      --accent-2:#f5f5f7;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, sans-serif;
+      background: linear-gradient(180deg,#050506 0%, #0b0b0c 100%);
+      color:var(--accent-2);
+      line-height:1.45;
+    }
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+    header{
+      position:sticky;top:0;
+      backdrop-filter: blur(6px);
+      background:rgba(11,11,12,0.65);
+      border-bottom:1px solid rgba(255,255,255,0.05);
+      z-index:20;
+    }
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 28px}
+    .logo{font-weight:800;letter-spacing:1px}
+    nav a{color:var(--accent-2);margin-left:18px;text-decoration:none;font-weight:500;opacity:.92}
+    .btn{padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#0b0b0c}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.1);color:var(--accent-2)}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;padding:80px 28px}
+    .huge-words{font-weight:800;font-size:48px;letter-spacing:30px;color:rgba(255,255,255,0.06);margin:0 0 18px 0;white-space:nowrap}
+    .title{font-size:48px;margin:0 0 14px 0}
+    .lead{color:var(--muted);max-width:66ch;margin-bottom:20px}
+    .hero-photo{border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.1)}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .section-title{font-size:20px;color:var(--muted);margin-bottom:18px}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .service-card{background:var(--glass);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.05)}
+    .portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .portfolio-item{position:relative;aspect-ratio:4/3;border-radius:8px;overflow:hidden}
+    .portfolio-item img{width:100%;height:100%;object-fit:cover}
+    .portfolio-caption{position:absolute;left:12px;bottom:12px;color:#fff;font-weight:600}
+
+    .socials{display:flex;gap:14px;margin-top:18px}
+    .socials a{color:var(--accent-2);font-weight:600;text-decoration:none}
+
+    footer{padding:28px;color:var(--muted);font-size:14px;text-align:center}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.huge-words{font-size:32px;letter-spacing:18px}.title{font-size:32px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">Shabnam Aishwarja</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div>
+      <div class="huge-words">Design&nbsp;Design&nbsp;Design</div>
+      <h1 class="title">Product Designer & UI/UX Specialist</h1>
+      <p class="lead">Hi, I’m Shabnam Aishwarja. I design meaningful digital experiences and products — blending usability with visual delight.</p>
+      <div>
+        <a class="btn btn-primary" href="#portfolio">See My Work</a>
+        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+      </div>
+      <div class="socials">
+        <a href="https://behance.net/shabnamaishwarja" target="_blank">Behance</a>
+        <a href="https://dribbble.com/" target="_blank">Dribbble</a>
+        <a href="https://linkedin.com/in/shanjidashabnam" target="_blank">LinkedIn</a>
+        <a href="mailto:shanjida.shabnam.cse@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=60&auto=format&fit=crop" alt="Product design illustration">
+    </div>
+  </section>
+
+  <section id="services" class="wrap">
+    <div class="section-title">What I Do</div>
+    <div class="services">
+      <div class="service-card"><h4>UI/UX Design</h4><p>Crafting intuitive interfaces and smooth user journeys.</p></div>
+      <div class="service-card"><h4>Product Design</h4><p>From idea to prototype — creating products users love.</p></div>
+      <div class="service-card"><h4>Branding & Visuals</h4><p>Clean, professional visuals that strengthen identity.</p></div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="wrap">
+    <div class="section-title">Featured Projects</div>
+    <div class="portfolio">
+      <a class="portfolio-item" href="https://behance.net/shabnamaishwarja" target="_blank">
+        <img src="https://images.unsplash.com/photo-1557093794-8e0b88a946c3?w=1200&q=60&auto=format&fit=crop" alt="Behance Project">
+        <div class="portfolio-caption">See more on Behance</div>
+      </a>
+      <a class="portfolio-item" href="https://dribbble.com/shabnamaishwarja/" target="_blank">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=60&auto=format&fit=crop" alt="Dribbble Shots">
+        <div class="portfolio-caption">Explore Dribbble</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <div class="section-title">Let’s Collaborate</div>
+    <p>If you’d like to work together or just say hi — reach me directly:</p>
+    <div class="socials">
+      <a href="mailto:shanjida.shabnam.cse@gmail.com">📧 Email</a>
+      <a href="https://linkedin.com/in/shanjidashabnam" target="_blank">💼 LinkedIn</a>
+      <a href="https://behance.net/shabnamaishwarja" target="_blank">🎨 Behance</a>
+      <a href="https://dribbble.com/shabnamaishwarja" target="_blank">🏀 Dribbble</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Shabnam Aishwarja — Product Designer
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
